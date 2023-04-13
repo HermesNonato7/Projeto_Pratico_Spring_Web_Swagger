@@ -6,6 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Esse {@link RestController} representa nossa <b>Facade</b>, pois abstrai toda
+ * a complexidade de integrações (Banco de Dados H2 e API do ViaCEP) em uma
+ * interface simples e coesa (API REST).
+ *
+ * @autor hermes
+ */
+
 @RestController
 @RequestMapping("clientes")
 public class ClienteRestController {

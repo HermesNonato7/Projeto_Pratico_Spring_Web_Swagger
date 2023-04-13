@@ -11,7 +11,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@Service
+/**
+ * Implementação da <b>Strategy</b> {@link ClienteService}, a qual pode ser
+ * injetada pelo Spring (via {@link Autowired}). Com isso, como essa classe é um
+ * {@link Service}, ela será tratada como um <b>Singleton</b>.
+ *
+ * @autor hermes
+ */
+
+ @Service
 public class ClienteServiceImpl implements ClienteService {
 
     // Singleton: Injetar os componentes do Spring com @Autowired.
